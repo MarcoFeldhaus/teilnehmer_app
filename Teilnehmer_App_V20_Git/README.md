@@ -61,6 +61,12 @@ npm init -y
 
 Sollten packages (node-modules) fehlen gebe ggfs. weitere Befehle ein
 
+MAC(erforderlich)
+```
+sudo chown -R 501:20 "/Users/marcohelmutfeldhaus/.npm"
+````
+Dann: Passwort sudo eingeben
+
 ```
 npm install express body-parser pg knex dotenv helmet cors morgan
 ```
