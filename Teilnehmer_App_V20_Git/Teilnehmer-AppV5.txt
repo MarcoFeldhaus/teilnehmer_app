@@ -1,0 +1,12 @@
+@echo
+
+set self=%~f0
+if "%1"=="minimized" goto :minimized
+cd %~dp0
+start "" /min  cmd /c "%self%" minimized
+exit /b
+:minimized
+
+start /min cmd.exe /k "cd C:/Users/marco/Developments/teilnehmer_app/Teilnehmer_App_V20_Git/backend && node server.js"
+
+start /min cmd.exe /k "cd C:/Users/marco/Developments/teilnehmer_app/Teilnehmer_App_V20_Git/frontend && yarn start"
